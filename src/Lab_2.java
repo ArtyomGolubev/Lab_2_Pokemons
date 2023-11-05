@@ -12,16 +12,18 @@ public class Lab_2 {
         // https://pokemondb.net/pokedex/flygon
 
         Battle b = new Battle();
-        Volbeat volbeat = new Volbeat("Волбит", 10);
-        Vibrava vibrava = new Vibrava("Вибрава", 10);
-        Trapinch trapinch = new Trapinch("Трапинч", 10);
-        Sunkern sunkern = new Sunkern("Санкерн", 10);
-        Flygon flygon = new Flygon("Флайгон", 10);
+        Volbeat volbeat = new Volbeat("Волбит", 5);
+        Vibrava vibrava = new Vibrava("Вибрава", 5);
+        Trapinch trapinch = new Trapinch("Трапинч", 5);
+        Sunkern sunkern = new Sunkern("Санкерн", 5);
+        Sunflora sunflora = new Sunflora("Санфлора", 5);
+        Flygon flygon = new Flygon("Флайгон", 5);
         b.addAlly(volbeat);
-        b.addAlly(flygon);
+        b.addAlly(vibrava);
+        b.addAlly(sunflora);
         b.addFoe(trapinch);
         b.addFoe(sunkern);
-        b.addFoe(vibrava);
+        b.addFoe(flygon);
         b.go();
     }
 }
