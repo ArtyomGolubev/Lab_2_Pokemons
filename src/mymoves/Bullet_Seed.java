@@ -15,25 +15,21 @@ public class Bullet_Seed extends PhysicalMove {
         int chance = (int) (Math.random() * 8) + 1;
         switch (chance) {
             case 1, 2, 3 -> {
-                c = "2";
                 for(int i = 2; i > 0; i--) {
                     super.applyOppDamage(p, damage);
                 }
             }
             case 4, 5, 6 -> {
-                c = "3";
                 for(int i = 3; i > 0; i--) {
                     super.applyOppDamage(p, damage);
                 }
             }
             case 7 -> {
-                c = "4";
                 for(int i = 4; i > 0; i--) {
                     super.applyOppDamage(p, damage);
                 }
             }
             case 8 -> {
-                c = "5";
                 for(int i = 5; i > 0; i--) {
                     super.applyOppDamage(p, damage);
                 }
@@ -48,6 +44,6 @@ public class Bullet_Seed extends PhysicalMove {
 
     @Override
     protected String describe() {
-        return "применяет Bullet Seed и наносит урон. Количество ударов: " + c;
+        return "применяет Bullet Seed и наносит урон";
     }
 }
