@@ -8,8 +8,6 @@ public class Bullet_Seed extends PhysicalMove {
         super(Type.GRASS, 25, 100);
     }
 
-    String c = new String();
-
     @Override
     protected void applyOppDamage(Pokemon p, double damage){
         int chance = (int) (Math.random() * 8) + 1;
